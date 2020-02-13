@@ -1,5 +1,7 @@
 # Columbus: Provider agnostic address lookup for laravel
 
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/codelayer/columbus.svg?style=flat-square)](https://packagist.org/packages/codelayer/columbus)
+
 This package allowes access the address lookup api from different geocoding providers using a unified interface.
 
 ## Installation
