@@ -1,0 +1,35 @@
+{
+  "name": "codelayer/columbus",
+  "description": "Provider agnostic address autocomplete",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+      {
+          "name": "Tobias Dierich",
+          "email": "tobias@codelayer.de",
+          "homepage": "https://codelayer.de",
+          "role": "Developer"
+      }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Codelayer\\Columbus\\": "src/"
+    }
+  },
+  "require": {
+    "guzzlehttp/guzzle": "^6.3",
+    "ext-json": "*",
+    "league/fractal": "0.*",
+    "illuminate/support": "5.*"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Codelayer\\Columbus\\ServiceProviders\\ColumbusServiceProvider"
+      ],
+      "aliases": {
+        "Columbus": "Codelayer\\Columbus\\Facades\\ColumbusFacade"
+      }
+    }
+  }
+}
